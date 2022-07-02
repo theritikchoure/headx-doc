@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Headx - a document head manager for react</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
+      <link rel="stylesheet" href="headx-global.css">
+      <link rel="stylesheet" href="headx-landing.css">
+      <link rel="author" href="humans.txt">
+      <link rel="icon" type="image/x-icon" href="favicon.png">
+  </head>
+  <body>
+    <nav>
+      <div class="logo"></div>
+      <ul class="menu">
+        <div class="menu__item toggle"><span></span></div>
+        <li class="menu__item"><a href="https://www.npmjs.com/package/headx" class="link link--dark"><i class="fa fa-book"></i> NPM Registry</a></li>
+        <li class="menu__item"><a href="https://github.com/theritikchoure/headx" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+      </ul>
+    </nav>
+    <div class="hero">
+      <h1 class="hero__title">Headx ⚓</h1>
+      <p class="hero__description">Make Your React Site <b>SEO Friendly</b></p>
+    </div>
+    <div class="hero__terminal">
+      <pre>
+        <!-- Place your demo code here -->
+        <code class="shell-session demo">usr ~ $ </code>
+      </pre>
+    </div>
+    <div class="wrapper">
+      <div class="installation">
+        <h3 class="section__title">Installation</h3>
+        <div class="tab__container">
+          <ul class="tab__menu">
+            <li class="tab active" data-tab="mac">npm</li>
+            <li class="tab" data-tab="linux">yarn</li>
+          </ul>
+          <pre class="nohighlight code">
+            <code class="tab__pane active mac">$  npm install headx</code>
+            <code class="tab__pane linux">$  yarn add headx</code>
+          </pre>
+        </div>
+      </div>
+      <div class="installation">
+        <h3 class="section__title">Usage</h3>
+        <pre class="nohighlight code">
+          <code class="">
+            import React from 'react'
+
+            import Headx from 'headx'
+
+            const App = () => {
+              return ( 
+                &lt;div&gt;
+                  &lt;Headx 
+                    title="Headx - Document Head Manager ⚓" 
+                    meta={[{name: 'description', content: 'Document Head Manager ⚓'}, 
+                    {name: 'author', content: 'theritikchoure'}]}
+                    httpEquiv={[{name: 'refresh', content: '30'}]}
+                    links={[{name: 'stylesheet', content: 'styles.css'}]}
+                  /&gt;
+                &lt;/div&gt;
+              )
+            }
+            
+            export default App
+          </code>
+        </pre>
+      </div>
+      <div class="feature">
+        <div class="feature__item">
+          <h3 class="section__title">Supports</h3>
+          <p>Supports all valid head tags: title, base, meta, link, script, noscript, and style tags</p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">No Duplicacy</h3>
+          <p>Duplicate head changes are preserved when specified in the same component</p>
+        </div>
+        <div class="feature__item">
+          <h3 class="section__title">Fast & Light</h3>
+          <p>It is a simple, fast and lightweight package for react</p>
+        </div>
+      </div>
+      <div class="callout">
+        <p>Go to NPM Registry</p>
+        <a href="https://www.npmjs.com/package/headx" class="button--primary">Headx - NPM</a>
+      </div>
+    </div>
+    <div class="changelog">
+      <div class="wrapper">
+        <h3 class="section__title">Changelog</h3>
+        <div class="changelog__item">
+          <div class="changelog__meta">
+            <h4 class="changelog__title">v0.5</h4>
+            <small class="changelog__date">5/10/2017</small>
+          </div>
+        </div>
+        <div class="changelog__item">
+          <div class="changelog__meta">
+            <h4 class="changelog__title">v0.6</h4>
+            <small class="changelog__date">7/30/2017</small>
+          </div>
+        </div>
+        <div class="changelog__item">
+          <div class="changelog__meta">
+            <h4 class="changelog__title">v0.5</h4>
+            <small class="changelog__date">5/10/2017</small>
+          </div>
+        </div>
+        <div class="changelog__callout">
+          <a href="#" class="button--secondary">Checkout Full Log</a>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">Headx - Created with ❣️ by <a href="https://github.com/theritikchoure" target="_blank" class="link link--light">Ritik</a>.</footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="headx.js"></script>
+  </body>
+</html>
