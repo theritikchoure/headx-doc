@@ -1,25 +1,44 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-      <meta charset="utf-8">
-      <meta name="description" content="">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Headx - a document head manager for react</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css">
-      <link rel="stylesheet" href="headx-global.css">
-      <link rel="stylesheet" href="headx-landing.css">
-      <link rel="author" href="humans.txt">
-      <link rel="icon" type="image/x-icon" href="favicon.png">
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Headx - a document head manager for react</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/railscasts.min.css"
+    />
+    <link rel="stylesheet" href="headx-global.css" />
+    <link rel="stylesheet" href="headx-landing.css" />
+    <link rel="author" href="humans.txt" />
+    <link rel="icon" type="image/x-icon" href="favicon.png" />
   </head>
   <body>
     <nav>
       <div class="logo"></div>
       <ul class="menu">
         <div class="menu__item toggle"><span></span></div>
-        <li class="menu__item"><a href="https://www.npmjs.com/package/headx" class="link link--dark"><i class="fa fa-book"></i> NPM Registry</a></li>
-        <li class="menu__item"><a href="https://github.com/theritikchoure/headx" class="link link--dark"><i class="fa fa-github"></i> Github</a></li>
+        <li class="menu__item">
+          <a href="https://www.npmjs.com/package/headx" class="link link--dark"
+            ><i class="fa fa-book"></i> NPM Registry</a
+          >
+        </li>
+        <li class="menu__item">
+          <a
+            href="https://github.com/theritikchoure/headx"
+            class="link link--dark"
+            ><i class="fa fa-github"></i> Github</a
+          >
+        </li>
       </ul>
     </nav>
     <div class="hero">
@@ -33,6 +52,15 @@
       </pre>
     </div>
     <div class="wrapper">
+      <div class="installation">
+        <h3 class="section__title">Get Started</h3>
+        <p>
+          It is a React Package to automatically modify the main html file (like
+          index.html) to add the provided SEO meta tags and more. For example you can use it to add on the build time
+          the following meta tags: title, description, open graph, twitter, icons
+          and more.
+        </p>
+      </div>
       <div class="installation">
         <h3 class="section__title">Installation</h3>
         <div class="tab__container">
@@ -75,20 +103,41 @@
       <div class="feature">
         <div class="feature__item">
           <h3 class="section__title">Supports</h3>
-          <p>Supports all valid head tags: title, base, meta, link, script, noscript, and style tags</p>
+          <p>
+            Supports all valid head tags: title, base, meta, link, script,
+            noscript, and style tags
+          </p>
         </div>
         <div class="feature__item">
           <h3 class="section__title">No Duplicacy</h3>
-          <p>Duplicate head changes are preserved when specified in the same component</p>
+          <p>
+            Duplicate head changes are preserved when specified in the same
+            component
+          </p>
         </div>
         <div class="feature__item">
           <h3 class="section__title">Fast & Light</h3>
           <p>It is a simple, fast and lightweight package for react</p>
         </div>
       </div>
+      <div class="installation">
+        <h3 class="section__title">Additional information</h3>
+        <p>
+          This package creates the tags in the html file before the closing head
+          tag.
+        </p>
+      </div>
+      <div class="installation">
+        <h3 class="section__title">License</h3>
+        <p>
+          This package is licensed under the MIT license. Author: theritikchoure
+        </p>
+      </div>
       <div class="callout">
         <p>Go to NPM Registry</p>
-        <a href="https://www.npmjs.com/package/headx" class="button--primary">Headx - NPM</a>
+        <a href="https://www.npmjs.com/package/headx" class="button--primary"
+          >Headx - NPM</a
+        >
       </div>
     </div>
     <div class="changelog">
@@ -117,9 +166,19 @@
         </div>
       </div>
     </div>
-    <footer class="footer">Headx - Created with ❣️ by <a href="https://github.com/theritikchoure" target="_blank" class="link link--light">Ritik</a>.</footer>
+    <footer class="footer">
+      Headx - Created with ❣️ by
+      <a
+        href="https://github.com/theritikchoure"
+        target="_blank"
+        class="link link--light"
+        >Ritik</a
+      >.
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-    <script>hljs.initHighlightingOnLoad();</script>
+    <script>
+      hljs.initHighlightingOnLoad();
+    </script>
     <script src="headx.js"></script>
   </body>
 </html>
