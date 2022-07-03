@@ -96,7 +96,6 @@ hr {
   border: 1px solid var(--code-bg-color);
   color: var(--primary-color-light);
   overflow-x: auto;
-  font-size: 12px;
 }
 
 .code--block {
