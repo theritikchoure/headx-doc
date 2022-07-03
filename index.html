@@ -56,9 +56,9 @@
         <h3 class="section__title">Get Started</h3>
         <p>
           It is a React Package to automatically modify the main html file (like
-          index.html) to add the provided SEO meta tags and more. For example you can use it to add on the build time
-          the following meta tags: title, description, open graph, twitter, icons
-          and more.
+          index.html) to add the provided SEO meta tags and more. For example
+          you can use it to add on the build time the following meta tags:
+          title, description, open graph, twitter, icons and more.
         </p>
       </div>
       <div class="installation">
@@ -91,6 +91,10 @@
                     {name: 'author', content: 'theritikchoure'}]}
                     httpEquiv={[{name: 'refresh', content: '30'}]}
                     links={[{name: 'stylesheet', content: 'styles.css'}]}
+                    og={[{name: 'type', content: 'website'}, 
+                       {name: 'url', content: 'http://example.com'}]}
+                    twitter={[{name: 'type', content: 'website'}, 
+                       {name: 'url', content: 'http://example.com'}]}
                   /&gt;
                 &lt;/div&gt;
               )
