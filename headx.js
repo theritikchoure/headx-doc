@@ -120,3 +120,12 @@ window.addEventListener('load', function(){
   icon.addEventListener('click', showNav);
 });
 
+function copyToClipboard(containerid) {
+  /* Get the text field */
+  var range = document.createRange();
+  range.selectNode(containerid); //changed here
+  window.getSelection().removeAllRanges(); 
+  window.getSelection().addRange(range); 
+  document.execCommand("copy");
+  window.getSelection().removeAllRanges();
+};
