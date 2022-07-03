@@ -313,7 +313,7 @@ table td:first-child {
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 620px) {
   .wrapper {     
     margin: 0 auto;
     width: 85%!important;
