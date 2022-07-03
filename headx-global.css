@@ -95,7 +95,7 @@ hr {
   background: var(--bg-color);
   border: 1px solid var(--code-bg-color);
   color: var(--primary-color-light);
-  overflow-x: auto;
+  overflow-x: auto!important;
 }
 
 .code--block {
@@ -298,9 +298,9 @@ table td:first-child {
 
 .footer {
   text-align: center;
-  background-color: var(--bg-color);
+  background-color: #F8F8FA!important;
   padding: 2rem;
-  color: black;
+  color: black!important;
 }
 
 @keyframes fadeUp {
