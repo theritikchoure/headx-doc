@@ -96,6 +96,7 @@ hr {
   border: 1px solid var(--code-bg-color);
   color: var(--primary-color-light);
   overflow-x: auto!important;
+  padding: 1rem 1.5rem;
 }
 
 .code--block {
